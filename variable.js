@@ -34,7 +34,7 @@ btnAddLists.className = "btn-list"
 
 const imgAddList = document.createElement("img")
 imgAddList.className = "svg-add"
-imgAddList.src = "Union.svg"
+imgAddList.src = "./img/Union.svg"
 
 const textBtn = document.createElement("p")
 textBtn.innerHTML = "Добавить список"
