@@ -1,0 +1,169 @@
+html {
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+
+    font-size: 1rem;
+    color: #fff;
+}
+
+.reminders {
+    display: flex;
+    height: 100vh;
+}
+
+.lists {
+    width: 40%;
+    background-color: #474749;
+    padding-left: 2rem;
+    padding-top: 4.4rem;
+    padding-right: 2rem;
+}
+
+.all-lists {
+    display: flex;
+    flex-direction: column;
+}
+
+.list-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1rem;
+    font-size: inherit;
+    color: inherit;
+    background-color: inherit;
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+    transition: background-color linear .2s, padding linear .2s;
+}
+
+.list-item:hover {
+    background-color: #636368;
+    padding: .8rem;
+}
+
+.active {
+    background-color: #636368;
+}
+
+.text-item {
+   text-align: left;
+}
+
+.num-item {
+    margin-right: 1rem;
+}
+
+.arrow::after {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    z-index: 1;
+    transform: translateY(-50%) rotate(45deg);
+}
+
+.btn-list {
+    position: absolute;
+    bottom: 4.4rem;
+    margin-top: 4.4rem;
+    background-color: transparent;
+    border: 0;
+    border-radius: .5rem;
+    padding: 1rem;
+    color: #ccc;
+    font-size: inherit;
+    display: flex;
+    align-items: center;
+    transition: color linear .2s;
+}
+
+.btn-list:hover {
+    cursor: pointer;
+    color: #fff;
+}
+
+.svg-add {
+    width: 1.5rem;
+    margin-right: .5rem;
+}
+
+
+/* Notes */
+
+.notes {
+    width: 60%;
+    background-color: #363739;
+    padding-left: 2rem;
+    padding-top: 4.4rem;
+}
+
+.h2 {
+    font-weight: 700;
+    font-size: 1.8rem;
+    margin-bottom: 2.7rem;
+}
+
+.notes-item {
+    position: relative;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid rgb(120, 120, 120);
+    margin-right: 2rem;
+    padding: 1rem;
+}
+
+.disactive .notes-text {
+    text-decoration: line-through;
+    color: #ccc;
+}
+
+.notes-input {
+    font-size: inherit;
+    color: inherit;
+    background-color: #636368;
+    padding: 1rem;
+    border-radius: .5rem;
+    border: none;
+    margin-right: 2rem;
+    outline: #eee063;
+    position: absolute;
+    bottom: 8.4rem;
+}
+
+.btn-notes {
+    position: absolute;
+    bottom: 4.4rem;
+    margin-top: 4.4rem;
+    border: 0;
+    border-radius: .5rem;
+    background-color: #E0D149;
+    padding: 1rem;
+    font-size: inherit;
+}
+
+.btn-notes:hover {
+    cursor: pointer;
+    background-color: #eee063;
+    padding: .8rem;
+    transition: background-color linear .2s, padding linear .2s;
+}
