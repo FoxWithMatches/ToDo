@@ -49,8 +49,6 @@ h2Notes.innerHTML = "Общие"
 
 const allNotes = document.createElement("ul")
 allNotes.classList = "all-lists"
-const allNotesItem = document.querySelector("ul")
-
 
 const notesItem = document.createElement("li")
 notesItem.className = "notes-item"
@@ -80,8 +78,7 @@ btnAddLists.append(imgAddList, textBtn)
 notes.append(h2Notes, allNotes, btnNotes, input)
 
 allNotes.append(notesItem, notesItemNew)
-notesItem.append(notesText)
-notesItemNew.append(notesTextNew)
+
 
 
 
