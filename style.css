@@ -132,11 +132,6 @@ body {
     padding: 1rem;
 }
 
-.disactive .notes-text {
-    text-decoration: line-through;
-    color: #ccc;
-}
-
 .notes-input {
     font-size: inherit;
     color: inherit;
@@ -148,6 +143,29 @@ body {
     outline: #eee063;
     position: absolute;
     bottom: 8.4rem;
+}
+
+.delete {
+    position: absolute;
+    top: 20%;
+    right: 0;
+    background-color: transparent;
+    border: none;
+    width: 100%;
+}
+
+.delete-img {
+    position: absolute;
+    right: 0;
+    cursor: pointer;
+    width: 1.5rem;
+    transform: rotate(45deg);
+    opacity: .2;
+    transition: opacity linear .2s;
+}
+
+.delete-img:hover {
+    opacity: 1;
 }
 
 .btn-notes {

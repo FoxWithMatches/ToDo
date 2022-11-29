@@ -50,13 +50,11 @@ h2Notes.innerHTML = "Общие"
 const allNotes = document.createElement("ul")
 allNotes.classList = "all-lists"
 
-const notesItem = document.createElement("li")
-notesItem.className = "notes-item"
-notesItem.textContent = "Молоко"
-
-const notesItemNew = document.createElement("li")
-notesItemNew.className = "notes-item"
-notesItemNew.textContent = "Корм коту"
+const deletedBtn = document.createElement("button")
+deletedBtn.className = "delete"
+const deleteImg = document.createElement("img")
+deleteImg.className = "delete-img"
+deleteImg.src = "./img/Union.svg"
 
 const btnNotes = document.createElement("button")
 btnNotes.className = "btn-notes"
@@ -76,8 +74,8 @@ btnListItem.append(btnTextList, navArrow)
 navArrow.append(numItemLists, arrow)
 btnAddLists.append(imgAddList, textBtn)
 notes.append(h2Notes, allNotes, btnNotes, input)
+deletedBtn.append(deleteImg)
 
-allNotes.append(notesItem, notesItemNew)
 
 
 
