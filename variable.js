@@ -52,6 +52,7 @@ allNotes.classList = "all-lists"
 
 export const deletedBtn = document.createElement("button")
 deletedBtn.className = "delete"
+deletedBtn.dataset.action = "delete"
 export const deleteImg = document.createElement("img")
 deleteImg.className = "delete-img"
 deleteImg.src = "./img/Union.svg"

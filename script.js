@@ -52,11 +52,13 @@ document.querySelector(".btn-notes").onclick = function() {
 
 //delete todo
 function deleteToDo(el) {
+
     el.addEventListener("click", (event) => {
         el.parentElement.remove();
-        console.log(el.parentElement);
         event.stopPropagation();
+        localStorage.removeItem("ul.all-lists")
     });
+
 }
 
 
@@ -87,7 +89,7 @@ function deleteToDo(el) {
 //         displayMessage += `
 //             <li class="notes-item" id="item_${index}">
 //                 ${item.todo}
-//                 <button class="delete" id="item_${index}">
+//                 <button class="delete" id="item_${index}" data-action="delete">
 //                     <img class="delete-img id="item_${index}" src="./img/Union.svg">
 //                 </button>
 //             </li>
@@ -95,5 +97,3 @@ function deleteToDo(el) {
 //         allNotes.innerHTML = displayMessage;
 //     })
 // }
-
-
